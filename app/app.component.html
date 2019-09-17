@@ -1,0 +1,24 @@
+
+  <nav class="navbar container-fluid">
+    <h1 class="heading" style="color:white;"> <a routerLink='' class="homeLink" routerLinkActive="active"> </a> Mentor on demand</h1>
+     <!-- <p class="heading"><a href="Login.html" style="text-decoration: none;color: white">/p></a> -->
+
+     <form class="form-group" (ngSubmit)="onSubmit()">
+         <div class="form-row mt-5">
+             <div class="form-group col-md-6">
+
+                 <input type="text" class="form-control" id="skills" name="skills" [(ngModel)]="mentor.skills" placeholder="Technology*">
+             </div>
+             <div class="form-group col-md-4">
+
+                 <input type="text" class="form-control" id="regDateTime" name="regDateTime" [(ngModel)]="mentor.regDateTime" placeholder="Time*">
+             </div>
+             <div class="form-group col-md-2">
+
+                 <button class="btn btn-primary my-2 my-sm-0" type="submit">Search</button>
+             </div>
+         </div>
+     </form>
+ </nav>
+
+<router-outlet></router-outlet>

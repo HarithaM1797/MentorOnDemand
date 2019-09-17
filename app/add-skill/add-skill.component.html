@@ -1,0 +1,40 @@
+<h2>Add Skill</h2>
+<div class="container-fluid">
+  <div class="card-body">
+    <div class="row">
+        <div class="col-2"></div>
+        <div class="col-8 signup">
+
+<form (ngSubmit)="onSubmit()">
+    
+    <div class="form-group col-md-5">
+      <label for="mentorId">Mentor Id</label>
+      <input type="text" class="form-control" id="mentorId" value="{{mentorId}}" [(ngModel)]="mentorId" readonly=true name="mentorId" placeholder="mentorId">
+    </div>
+    <div class="form-group col-md-5">
+        <label for="skillName">Skill Name</label>
+        <input type="text" class="form-control" id="skillName"   [(ngModel)]="mentorSkills.skillName"  name="skillName" placeholder="SkillName">
+      </div>
+    <div class="form-group col-md-5">
+        <label for="yearsOfExperience">Years Of Experience</label>
+        <input type="number" class="form-control" id="yearsOfExperience" name="yearsOfExperience" [(ngModel)]="mentorSkills.yearsOfExperience" placeholder="yearsOfExperience">
+      </div>
+      
+      <div class="form-group col-md-5">
+            <label for="regDateTime">RegDateTime</label>
+            <input type="text" class="form-control" id="regDateTime" name="regDateTime" [(ngModel)]="mentorSkills.regDateTime" placeholder="regDateTime">
+          </div>
+          <div class="form-group col-md-5">
+              <label for="trainingsDelivered">Trainings Delivered</label>
+              <input type="text" class="form-control" id="trainingsDelivered" name="trainingsDelivered" [(ngModel)]="mentorSkills.trainingsDelivered" placeholder="trainingsDelivered">
+            </div>
+            <div class="form-group col-md-5">
+                <label for="facilities">Facilities</label>
+                <input type="text" class="form-control" id="facilities" name="facilities" [(ngModel)]="mentorSkills.facilities" placeholder="facilities">
+              </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+  </div>
+  </div>
+  </div>
+</div>

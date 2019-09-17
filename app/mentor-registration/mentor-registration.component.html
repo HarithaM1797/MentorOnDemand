@@ -1,0 +1,93 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-2"></div>
+        <div class="col-8 signup">
+
+            <form class="signup1 bg-light" (ngSubmit)="onSubmit()">
+                <div class="form-row">
+                  
+                            <div class="form-group col-md-6">
+                            <label for="firstname">FirstName</label>
+                            <input type="text" class="form-control" id="firstname" name="firstname" [(ngModel)]="mentor.firstName"
+                                placeholder="Enter your Full name">
+                      
+                    </div>
+
+
+                   
+                        <div class="form-group col-md-6">
+                                <label for="lastname">Lastname</label>
+                                <input type="lastname" class="form-control" id="lastname" name="lastname" [(ngModel)]="mentor.lastName" placeholder="Email">
+                            </div>
+                    <div class="form-group col-md-6">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" name="email" [(ngModel)]="mentor.email"  placeholder="Email">
+                     </div>
+                     <div class="form-group col-md-6">
+                        <label for="password">Password</label>
+                        <input type="password" class="form-control" id="password"  [(ngModel)]="mentor.password" name="password"
+                            placeholder="Password">
+                    </div>
+                
+                     <div class="form-group col-md-6">
+                            <label for="contactNumber">Contact Number</label>
+                            <input type="text" class="form-control" id="contactNumber" [(ngModel)]="mentor.contactNumber" placeholder="Share your Linked in profile"
+                                name="contactNumber">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="linkedinUrl">Linkedin URL</label>
+                            <input type="text" class="form-control" id="linkedinUrl" [(ngModel)]="mentor.linkedinUrl" placeholder="Share your Linked in profile"
+                                name="linkedinUrl">
+                        </div>
+                  
+                    <div class="form-group col-md-6">
+                    <label for="regDateTime">RegDateTime</label>
+                    <input type="text" class="form-control" id="regDateTime" [(ngModel)]="mentor.regDateTime" placeholder="Enter your Address"
+                        name="regDateTime">
+                </div>
+
+
+                <div class="form-group col-md-6">
+                    <label for="regCode">Regcode</label>
+                    <input type="text" class="form-control" id="regCode" [(ngModel)]="mentor.regCode" placeholder="Enter Timings"
+                        name="regCode">
+                </div>
+        
+                <div class="form-group col-md-6">
+                    <label for="skills">Skills</label>
+                    <input type="text" class="form-control" id="skills" [(ngModel)]="mentor.skills" placeholder="Enter Technologies"
+                        name="skills">
+                </div>
+
+                <div class="form-group col-md-6">
+                        <label for="currentCourse">Current course</label>
+                        <input type="text" class="form-control" id="currentCourse" [(ngModel)]="mentor.currentCourse" placeholder="Enter Technologies"
+                            name="currentCourse">
+                    </div>
+               
+                <div class="form-group col-md-6">
+                 
+                        <label for="yearOfExperience">Working Experience in years</label>
+                        <input type="text" class="form-control" name="yearOfExperience" id="yearOfExperience"  [(ngModel)]="mentor.yearOfExperience" placeholder="Share your Work Experience">
+
+                    </div>
+                    <div class="form-group col-md-6">
+                    <label for="status">Status</label>
+                    <input type="tel" id="status" name="status"   [(ngModel)]="mentor.status" class="form-control">
+                    </div>
+                    <div class="form-group col-md-6">
+                            <label  for="rating">Rating</label>
+                            <input type="tel" id="rating" name="rating"  [(ngModel)]="mentor.rating"class="form-control">
+                            </div>
+                            <div class="form-group col-md-6">
+                                    <label for="selfRating">Self Rating</label>
+                                    <input type="tel" id="selfRating" name="selfRating" [(ngModel)]="mentor.selfRating" class="form-control">
+                                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Sign in</button>
+            
+            </form>
+        </div>
+    </div>
+    <div class="col-2"></div>
+</div>

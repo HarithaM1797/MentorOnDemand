@@ -1,0 +1,42 @@
+
+<div class="row home">
+  <div class="col-4 ">
+
+  </div>
+  <div class="col-4 homelog">
+      <div class="card login" style="width: 40rem;">
+          <div class="card-body">
+              <form (ngSubmit)="onSubmit()">
+                <div class="form-group">
+                      <label for="email"><b>Email address</b></label>
+                      <input type="email" class="form-control" id="email" [(ngModel)]="login.email" name="email" aria-describedby="emailHelp"
+                          placeholder="Enter email" autofocus>
+                      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                          else.</small>
+                  </div>
+                  <div class="form-group">
+                      <label for="password"><b>Password</b></label>
+                      <input type="password" class="form-control" id="password" [(ngModel)]="login.password" name="password" placeholder="Password">
+                  </div>
+                  <br>
+                  <button type="submit" class="btn btn-primary" >login</button>
+                  
+                  <div class="btn-group" role="group">
+                          <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle linksreg regbut" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Register as
+                          </button>
+                          <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                            <a [routerLink]="['/UserRegistration']"class="dropdown-item"  routerLinkActive="active">User</a>
+                            <a [routerLink]="['/MentorRegistration']" class="dropdown-item" routerLinkActive="active">Mentor</a>
+                            <a [routerLink]="['/AdminRegistration']" class="dropdown-item"  routerLinkActive="active">Admin</a>
+                          </div>
+                        </div>
+              </form>
+          
+           
+             
+             
+          </div>
+      </div>
+  </div>
+</div>
